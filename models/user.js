@@ -6,7 +6,8 @@ var schema = new Schema({
     firstname: { type: String, required: true },
     lastname: { type: String, require: true },
     password: { type: String, require: true },
-    email: { type: String, required: true, unique: true }
+    email: { type: String, required: true, unique: true },
+    role: { type: String }
     //,
     //messages: [{ type: Schema.Types.ObjectId, ref: 'Message' }]
 });
