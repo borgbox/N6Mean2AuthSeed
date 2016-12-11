@@ -25,11 +25,12 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> {{username}}</a></li>
             <li><a href="#" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> Sair &nbsp;</a></li>
+            <li><a  [routerLink]="['signup']"><span class="glyphicon glyphicon-log-in"></span> Cadastrar &nbsp;</a></li>              
+
         </ul>
     </div>
     <!-- /.navbar-collapse -->
 </nav>
-
 
 <div class="container">
     <h3>Collapsible Navbar</h3>

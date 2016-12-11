@@ -1,3 +1,4 @@
+import { routing } from './../app.routing';
 import { HeaderModule } from './../header/header.module';
 // Angular Imports
 import { NgModule } from '@angular/core';
@@ -7,7 +8,7 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
     imports: [
-        HeaderModule
+        HeaderModule, routing
     ],
     declarations: [
         HomeComponent,

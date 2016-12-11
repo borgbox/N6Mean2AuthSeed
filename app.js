@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+//Seed data for mongo db admin user - comment after first run
+var seedDB = require('./seed.db');
+
 //var compression = require('compression');
 
 //Criação variável mongoose para conectar com BD mongo
@@ -59,5 +62,8 @@ app.use('/', appRoutes);
 app.use(function (req, res, next) {
     return res.render('index');
 });
+
+//Seed mongo DB with admin data
+seedDB.initializeAdmin();
 
 module.exports = app;

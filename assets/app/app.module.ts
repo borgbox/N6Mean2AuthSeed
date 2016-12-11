@@ -1,3 +1,6 @@
+import { RouterModule } from '@angular/router';
+import { SignUpComponent } from './auth/signin/signup.component';
+import { HeaderModule } from './header/header.module';
 import { MessageModule } from './message/message.module';
 import { CommonModule } from '@angular/common';
 import { MessageComponent } from './message/message.component';
@@ -14,14 +17,13 @@ import { NgModule } from '@angular/core';
 
 import { HttpModule } from '@angular/http';
 
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /*  This Module's Components */
 import { AppComponent } from './app.component';
 
 @NgModule({
-    imports: [BrowserModule, routing, ReactiveFormsModule, HttpModule, HomeModule, MessageModule, CommonModule],
-    declarations: [AppComponent, LoginComponent],
+    imports: [RouterModule, BrowserModule, CommonModule, routing, FormsModule, ReactiveFormsModule, HttpModule, HomeModule, MessageModule, HeaderModule],
+    declarations: [AppComponent, LoginComponent, SignUpComponent],
     providers: [AuthorizationService, AuthorizationGuard],
     bootstrap: [AppComponent]
 
