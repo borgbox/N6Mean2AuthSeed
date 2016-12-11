@@ -38,5 +38,5 @@ http://valor-software.github.io/ng2-bootstrap
 <br>
 https://github.com/ghillert/angular2-webpack-starter-bootstrap
 <br>
-<h3>Reference for internationalization(not used ye)</h3>
+<h3>Reference for internationalization(not used yet)</h3>
 https://github.com/ocombe/ng2-translate
