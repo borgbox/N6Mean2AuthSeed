@@ -30,13 +30,13 @@ Seed with authentication
 <br>
 
 <hr>
-<h3>Referência para controle de acesso</h3>
+<h3>Reference for authentication</h3>
 http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial
 <br>
-<h3>Referência para adição do bootstrap e jquery</h3>
+<h3>References for jquery bootstrap</h3>
 http://valor-software.github.io/ng2-bootstrap
 <br>
 https://github.com/ghillert/angular2-webpack-starter-bootstrap
 <br>
-<h3>Referência para internacionalização</h3>
+<h3>Reference for internationalization(not used ye)</h3>
 https://github.com/ocombe/ng2-translate
