@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card card-container form-login">
+        <form class="form-signin" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" required autofocus>
+            <input type="password" id="inputPassword" class="form-control" formControlName="password" placeholder="Senha" required>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" [disabled]="!myForm.valid" type="submit">Entrar</button>
+        </form>
+        <!-- /form -->
+        <a href="#" class="forgot-password">
+                Esqueceu a senha ?
+            </a>
+    </div>
+    <!-- /card-container -->
+</div>
+<my-message></my-message>
+<!-- /container -->
