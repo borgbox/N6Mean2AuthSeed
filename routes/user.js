@@ -21,7 +21,8 @@ router.post('/', function (req, res, next) {
         firstname: req.body.firstName,
         lastname: req.body.lastName,
         password: bcrypt.hashSync(req.body.password, 10),
-        email: req.body.email
+        email: req.body.email,
+        role: req.body.role
     });
 
     user.save(function (err, result) {

@@ -1,5 +1,6 @@
+import { ChartsModule } from './charts/charts.module';
 import { RouterModule } from '@angular/router';
-import { SignUpComponent } from './auth/signin/signup.component';
+import { SignUpComponent } from './auth/signup.component';
 import { HeaderModule } from './header/header.module';
 import { MessageModule } from './message/message.module';
 import { CommonModule } from '@angular/common';
@@ -22,9 +23,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 @NgModule({
-    imports: [RouterModule, BrowserModule, CommonModule, routing, FormsModule, ReactiveFormsModule, HttpModule, HomeModule, MessageModule, HeaderModule],
-    declarations: [AppComponent, LoginComponent, SignUpComponent],
-    providers: [AuthorizationService, AuthorizationGuard],
+    imports: [RouterModule, 
+    		  BrowserModule,
+              CommonModule,
+              routing,
+              FormsModule, 
+              ReactiveFormsModule, 
+              HttpModule, 
+              HomeModule, 
+              MessageModule, 
+              HeaderModule,
+              ChartsModule],
+    declarations: [AppComponent, 
+    			   LoginComponent, 
+                   SignUpComponent],
+    providers: [AuthorizationService, 
+    			AuthorizationGuard],
     bootstrap: [AppComponent]
 
 })

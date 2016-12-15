@@ -1,5 +1,6 @@
-import { SignUpModule } from './auth/signin/signup.module';
-import { SignUpComponent } from './auth/signin/signup.component';
+import { ChartsComponent } from './charts/charts.component';
+import { SignUpModule } from './auth/signup.module';
+import { SignUpComponent } from './auth/signup.component';
 import { AuthorizationGuard } from './auth/authorization.guard';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
@@ -11,9 +12,9 @@ const APP_ROUTES: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     //Home
     {
-        path: 'home', component: HomeComponent, canActivate: [AuthorizationGuard], children: 
-        [ { path: '', component: HomeComponent },
-          { path: 'signup', component: SignUpComponent }]
+        path: 'home', component: HomeComponent, canActivate: [AuthorizationGuard], children:
+        [{ path: '', component: ChartsComponent },
+        { path: 'signup', component: SignUpComponent }]
     },
     //Login
     { path: 'login', component: LoginComponent },

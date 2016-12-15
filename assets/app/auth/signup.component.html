@@ -2,14 +2,19 @@
     <div class="card card-container form-login">
         <form class="form-signin" [formGroup]="myForm" (ngSubmit)="onSubmit()">
             <span id="reauth-email" class="reauth-email"></span>
-            <input type="text" id="firstname" class="form-control" formControlName="fisrtname" placeholder="Nome" required autofocus>
+            <input type="text" id="firstname" class="form-control" formControlName="firstname" placeholder="Nome" required autofocus>
             <input type="text" id="lastname" class="form-control" formControlName="lastname" placeholder="Sobrenome" required autofocus>
             <input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" required>
             <input type="password" id="inputPassword" class="form-control" formControlName="password" placeholder="Senha" required>
             <input type="password" id="inputPasswordRepeat" class="form-control" formControlName="passwordRepeat" placeholder="Confirmação Senha"
                 required>
 
-
+            <div class="form-group">
+                <label for="role">Papel</label>
+                <select id="role" class="form-control" formControlName="role" required>
+               <option *ngFor="let r of roles" [value]="r">{{r.description}}</option>
+           </select>
+            </div>
 
             <button class="btn btn-lg btn-primary btn-block btn-signin" [disabled]="!myForm.valid" type="submit">Entrar</button>
         </form>
