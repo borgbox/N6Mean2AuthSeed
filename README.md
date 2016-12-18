@@ -49,9 +49,11 @@ npm install @angular/compiler-cli @angular/platform-server --save
  <br>
  The command should be execute inside the folder where the file must be created
  in this example the fil was originally created inside assets/app and after moved to locale folder
-<h5>Official reference</h5>
+<h4>Official reference</h4>
 https://angular.io/docs/ts/latest/cookbook/i18n.html#!#ng-xi18n
-<h5>Reference to make work with webpack</h5>
+<h4>Reference to make work with webpack</h4>
 http://stackoverflow.com/questions/39498629/angular2-and-webpack-i18n-plugin-vs-ng2-translate
 <br>
 The configuration in main.ts allows to dynamically change locale and translation files, the dynamic data e logic selection is inside settings.service.ts
+<br>
+The file /locale/message.ts carries the export the translations to be used.
