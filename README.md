@@ -56,4 +56,4 @@ http://stackoverflow.com/questions/39498629/angular2-and-webpack-i18n-plugin-vs-
 <br>
 The configuration in main.ts allows to dynamically change locale and translation files, the dynamic data e logic selection is inside settings.service.ts
 <br>
-The file /locale/message.ts carries the export the translations to be used.
+The file /locale/message.ts carries and export the translations to be used.
