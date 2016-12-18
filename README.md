@@ -40,3 +40,18 @@ https://github.com/ghillert/angular2-webpack-starter-bootstrap
 <br>
 <h3>Reference for internationalization(not used yet)</h3>
 https://github.com/ocombe/ng2-translate
+<br>
+<h2>References i18n</h2>
+<h3>Install angular cli is a pre-requisite:</h3>
+npm install @angular/compiler-cli @angular/platform-server --save
+<h4>Execute commands through Windows OS to create de file</h4>
+ "./../../node_modules/.bin/ng-xi18n"
+ <br>
+ The command should be execute inside the folder where the file must be created
+ in this example the fil was originally created inside assets/app and after moved to locale folder
+<h5>Official reference</h5>
+https://angular.io/docs/ts/latest/cookbook/i18n.html#!#ng-xi18n
+<h5>Reference to make work with webpack</h5>
+http://stackoverflow.com/questions/39498629/angular2-and-webpack-i18n-plugin-vs-ng2-translate
+<br>
+The configuration in main.ts allows to dynamically change locale and translation files, the dynamic data e logic selection is inside settings.service.ts
