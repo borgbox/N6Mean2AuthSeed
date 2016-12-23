@@ -27,7 +27,9 @@ export class LoginComponent {
                 /*Redireciona para Home após login*/
                 this.router.navigateByUrl('/home');
             },
-            error => { console.log(error); }
+            error => { 
+                this.messageService.handleMessage({ 'type': 'E', 'title': 'Erro de acesso', 'content': 'Usuário ou senha incorreto(s)' });
+                console.log(error); }
             );
         this.myForm.reset();
     }

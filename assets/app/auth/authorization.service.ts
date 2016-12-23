@@ -32,7 +32,6 @@ export class AuthorizationService {
         return this.http.post('http://localhost:3000/user/signin', body, { headers: headers })
             .map((response: Response) => response.json())
             .catch((error: Response) => {
-                debugger;
                 //this.errorService.handleError(error.json())
                 return Observable.throw(error.json());
             });
