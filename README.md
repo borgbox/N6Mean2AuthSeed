@@ -11,7 +11,7 @@ Seed with authentication
 <h4>Development</h4>
 <p>npm run build
 <br>
-<h4>Producton</h4>
+<h4>Production</h4>
 <p>npm run build:prod
 <br>
 
